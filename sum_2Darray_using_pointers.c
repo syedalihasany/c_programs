@@ -15,7 +15,7 @@ int main() {
     return 0;
 }
 
-int print_array(int n, int m, int e[][m]){ 
+int print_array(int n, int m, int e[][m]){  //printing the 2D array
                                     
     for(int k = 0; k<n; k++){
         for(int j  = 0; j<m ;j++){
