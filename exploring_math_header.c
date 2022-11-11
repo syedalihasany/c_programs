@@ -2,6 +2,7 @@
 #include <float.h>
 #include <limits.h>
 #include <math.h>
+#include <errno.h>
 
 #ifndef PI
     #define PI 3.14159265358979323846
@@ -25,6 +26,9 @@ int main(int argc,char* argv[]) {
     printf("%f \n",cos(PI/4));
     printf("%f \n",exp(3));
     printf("%f \n",log(20.085537));
+    printf("%f \n",INFINITY);
+    printf("%f \n",8.7/INFINITY);
+    printf("Error :%d \n",errno);
     
     
     //printing command line arguments
