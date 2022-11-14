@@ -3,6 +3,7 @@
 #include <limits.h>
 #include <math.h>
 #include <errno.h>
+#include <complex.h>
 
 #ifndef PI
     #define PI 3.14159265358979323846
@@ -30,11 +31,19 @@ int main(int argc,char* argv[]) {
     printf("%f \n",8.7/INFINITY);
     printf("Error :%d \n",errno);
     
+    // complex arithmetic using C99
+    double complex z = 5 + 6 * I;
+    double complex w = 10 + 22 * I;
+    double complex v = z + w;
+    printf("%.2f + j%.2f \n",creal(v), cimag(v));
+    
+    
     
     //printing command line arguments
     for (int i = 0; i < argc ; i++){
         printf("argument %d is %s \n",i,argv[i]);
     }
+    
     
 
     return 0;
