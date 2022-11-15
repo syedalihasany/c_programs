@@ -11,13 +11,14 @@
 */
 
 char* address_word;
-
+int check = 1;
 int count = 0;
 int main(){
 
-    while(*address_word != '#' ){
+    while(check ){
         address_word = read_word();
         print_word(address_word);
+        check = check_for_hash(address_word);
         print_space();
         count++;
         if (count >= 6){

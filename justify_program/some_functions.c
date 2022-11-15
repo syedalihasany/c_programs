@@ -27,3 +27,12 @@ int print_newline(){
 
     return 0;
 }
+
+int check_for_hash(char* address){
+    int my_bool = 1;
+    if (*address == '#' )
+        my_bool = 0;
+
+
+    return my_bool;
+}
