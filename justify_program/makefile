@@ -4,3 +4,5 @@ justify.o: justify.c some_functions.h
 		gcc -c justify.c
 some_functions.o: some_functions.c some_functions.h
 		gcc -c some_functions.c
+clean:
+		rm main.exe justify.o some_functions.o output.txt
